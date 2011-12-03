@@ -8,7 +8,11 @@ if ($details) {
 	
 	<h2><?php echo $details['title']; ?> <cite><?php echo 'by: '.$details['creator']; ?></cite></h2>
 		<img src='<?php echo $details['image_url']; ?>' /></br>
-		<strong>Description:</strong> <?php echo $details['description']; ?>
+		<b>Description:</b> <?php echo $details['description']; ?>
+		<br /><b>Time Estimate:</b> <?php echo $details['estimated_time']; ?>
+		<br /><b>Difficulty:</b> <?php echo $details['difficulty']; ?>
+		<br /><b>Dish Type:</b> <?php echo $details['category']; ?>
+		
 	</p>
 	
 	<div class="maininfo">
