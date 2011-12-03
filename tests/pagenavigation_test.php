@@ -13,6 +13,16 @@ class TestOfPageNavigation extends WebTestCase
 		$this->assertText('Submit a Recipe');
 	}
 	
+	function testHomePageToBrowsePage()	//Test clicking create button from home page
+	{
+		$this->get('http://localhost/menu429_final/index.php/main/browse');
+		$this->click('Browse Recipes');
+		$this->assertText('Category');
+		$this->assertText('Time Estimated');
+		$this->assertText('Difficulty');
+		$this->assertClickable('Submit');
+	}
+	
 	function testCreatePageRedirectionToHomePage() //Redirection to homepage after filling create form
 	{
 		$this->get('http://localhost/menu429_final/index.php/main/create');
@@ -27,16 +37,6 @@ class TestOfPageNavigation extends WebTestCase
 		$this->clickSubmit("Submit Recipe");
 		$this->assertTitle('Recipes Sharing Network');
 		$this->assertText('Recently Submitted');
-	}
-	
-	function testHomePageToBrowsePage()	//Test clicking create button from home page
-	{
-		$this->get('http://localhost/menu429_final/index.php/main/browse');
-		$this->click('Browse Recipes');
-		$this->assertText('Category');
-		$this->assertText('Time Estimated');
-		$this->assertText('Difficulty');
-		$this->assertClickable('Submit');
 	}
 }
 ?>

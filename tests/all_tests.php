@@ -1,4 +1,7 @@
 <?php
+require_once('show_passes.php');
+require_once('simpletest/simpletest.php');
+SimpleTest::prefer(new ShowPasses());
 require_once('simpletest/autorun.php');
 
 class AllTestsSuite extends TestSuite
