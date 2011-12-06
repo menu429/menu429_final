@@ -12,7 +12,7 @@ body{
 }
 
 h1, h2, h3, h4, h5, h6{font-family: Georgia, "Times New Roman", Times, serif; font-weight:normal; letter-spacing: 1px;}
-h1, h2, h3, h4, h5, h6, p, ul{margin: 5px 0 10px 0;}
+h1, h2, h3, h4, h5, h6, p, ul{margin: 5px 0 5px 0;}
 h2{color: #fff; font-variant:small-caps;}
 p, li{font-size: 0.9em; line-height: 1.4em;}
 li{list-style-position:inside;margin-bottom:5px;}
@@ -36,6 +36,15 @@ a:hover, a:active, a:focus{text-decoration:underline;}
 	border-bottom: 2px solid #FFD69F;
 }
 
+#logo {
+	margin: 5px 0px 0px 15px;
+}
+
+#banner {
+	float:right;
+	margin: 10px 15px 0px 0px;
+}
+
 #head h1{
 	margin: 0;
 	padding: 30px 20px;
@@ -50,13 +59,14 @@ a:hover, a:active, a:focus{text-decoration:underline;}
 }
 
 #sidebar{
-	background-color: #5C223B;
+	background-color: #FF8B00;
 	float: left;
-	padding: 15px 5px 20px 5px;
-	margin: 50px 15px 0 0px;
+	padding: 15px 5px 15px 5px;
+	margin: 20px 15px 0 0px;
 	width: 291px;
 	border-radius: 7px;
 	border: 3px solid #FFD69F;
+	height: 556px;
 }
 
 #sidebar p.sidebar_bttn{
@@ -83,6 +93,10 @@ a:hover, a:active, a:focus{text-decoration:underline;}
 	border-radius: 15px;
 }
 
+#sidebar p.intro_video {
+	margin: 0 10px 15px 10px;
+}
+
 #sidebar ul li{
 	list-style: none;
 	margin-bottom: 0;
@@ -100,11 +114,23 @@ a:hover, a:active, a:focus{text-decoration:underline;}
 	text-decoration: none;
 }
 
+#sidebar ul li{
+	display: inline;
+}
+
+#social{
+	margin: 0px 10px 15px 10px;	
+}
+
+#social li{
+	margin-right: 23px;
+}
+
 #content{
 	float: right;
 	background-color: #fff;
-	margin-top: 50px;
-	padding: 0px 20px 20px 20px;
+	margin-top: 20px;
+	padding: 0px 20px 15px 20px;
 	width: 572px;
 	overflow: hidden;
 	border-radius: 7px;
@@ -140,16 +166,16 @@ h4 {
 }
 
 .dish {
-	display:block;
-	float:left;
-	width:168px;
-	height:180px;
-	margin:10px;
-	border:1px solid #494949;
-	text-align:center;
-	text-decoration:none;
-	color: #000;
-	overflow:hidden;
+	display: block;
+	float: left;
+	width: 168px;
+	height: 165px;
+	margin: 0px 10px 8px 10px;
+	border: 1px solid #494949;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	overflow: hidden;
 }
 .dish img {
 	border:0;

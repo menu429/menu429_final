@@ -9,5 +9,6 @@
 		<div id="wrapper">
 	
 			<div id="head">
-				<h1><a href="<?php echo site_url(); ?>"><?php echo $sitetitle; ?></a></h1>
+				<img id="logo" src='<?php echo base_url(); ?>/images/logo.png'/>
+				<img id="banner" src='<?php echo base_url(); ?>/images/banner.png'/>
 			</div>
