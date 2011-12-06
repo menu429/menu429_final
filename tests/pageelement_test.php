@@ -11,7 +11,7 @@ class TestOfPageElements extends WebTestCase
 		$this->assertTitle('Recipes Sharing Network');
 		$this->assertClickable('Share Your Recipe');
 		$this->assertClickable('Browse Recipes');
-		$this->assertClickable('Recipes Sharing Network');
+		$this->assertTitle('Recipes Sharing Network');
 	}
 	//Create page testing
 	function testCreatePageElements()
@@ -38,7 +38,7 @@ class TestOfPageElements extends WebTestCase
 		//Test all options of category
 		$this->assertTrue($this->setField('category', 'Appetizers'));
 		$this->assertTrue($this->setField('category', 'Sides')); // Check this one
-		$this->assertTrue($this->setField('category', 'Entrées'));
+		$this->assertTrue($this->setField('category', 'Entrees'));
 		$this->assertTrue($this->setField('category', 'Desserts'));
 		$this->assertTrue($this->setField('category', 'Beverages'));
 		$this->assertTrue($this->setField('category', 'Others'));
